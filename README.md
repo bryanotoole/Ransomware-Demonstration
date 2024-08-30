@@ -9,7 +9,7 @@ The progress of this lab is outlined in the Description and displayed in the Scr
 - Set up a virtual machine for testing a ransomware program run in Windows Visual Studio 2022.
 - Downloaded a variety of files to different locations within the virtual machine to demonstrate that select folders can be targeted based on content, sensitivity, and value of the information.
 - Configured a C# ransomware template to meet custom parameters. This demonstrates how the malware is written from the perspective of a threat actor.
-- Encrypted the Documents, Pictures, and Desktop folders, and left a ransomnote. This demonstrates what a real ransomware incident would look like from the perspective of a victim.
+- Encrypted the Documents, Pictures, and Desktop folders, and left a ransom note. This demonstrates what a real ransomware incident would look like from the perspective of a victim.
 - Decrypted the affected folders, simulating what a vcitim would see after a ransom is paid.
 - Located the executable files for this project to show that it could theoretically be shared with others or installed on other machines.
 
@@ -24,16 +24,16 @@ The progress of this lab is outlined in the Description and displayed in the Scr
 ## Screenshots
 
 <p align="center">
-Figure 1: C# script used in Windows Visual Studio. The test Gmail address seen here is linked to the script. 
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%201.%20C%23%20Script.PNG"/> <br />
+Figure 1: Important files of the test user. The victim here being represented in this demo is an Iranian nuclear scientist. The scientist has a number of files on his Desktop that are of high value and secrecy, along with personal files in the Documents and Pictures folders. Losing access to these files without proper backup solutions would be detrimental.
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Files%20Before%20Encryption.PNG"/> <br />
 <br />
 <p align="center">
-Figure 2: Viewer window showing keystrokes being logged and sent to the test email. <br/>
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%202.%20Log%20File%20Demo%20Screen.PNG"/> <br />
+Figure 2: Part of the C# code that makes up the ransomware. The parameters here direct the ransomware to target the Desktop, Documents, and Pcitures folers. The code also sets the password for decryoption, along with elements that will appear in the ransom message. <br/>
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Ransomware%20C%23%20Code.PNG"/> <br />
 <br />
 <p align="center">
-Figure 3: Logs emailed to the test email once they reach the maximum byte length.
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%203.%20Logs%20Sent%20To%20Test%20Email.PNG"/> <br />
+Figure 3: Once encryption has begun, this is what the scientist would see in real time. Notice the encrypted files are not able to be viewed as before, and have a new file extension (jcrypt). This file extension is what will tell the decryption program what files to target if the ransom is paid. 
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Encryption%20In%20Progress.PNG"/> <br />
 <br />
 <p align="center">
 Figure 4: Logs sent in the body and as an attachment to the email.
