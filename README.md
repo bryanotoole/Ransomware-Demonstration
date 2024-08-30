@@ -32,28 +32,28 @@ Figure 2: Part of the C# code that makes up the ransomware. The parameters here 
 <img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Ransomware%20C%23%20Code.PNG"/> <br />
 <br />
 <p align="center">
-Figure 3: Once encryption has begun, this is what the scientist would see in real time. Notice the encrypted files are not able to be viewed as before, and have a new file extension (jcrypt). This file extension is what will tell the decryption program what files to target if the ransom is paid. 
+Figure 3: Once encryption has begun, this is what the scientist would see in real time. Notice the encrypted files are not able to be viewed as before, and have a new file extension (jcrypt). This file extension is what tells the decryption program what files to target if the ransom is paid. 
 <img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Encryption%20In%20Progress.PNG"/> <br />
 <br />
 <p align="center">
-Figure 4: Logs sent in the body and as an attachment to the email.
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%204.%20Logs%20Sent%20In%20Body%20of%20Email%20And%20As%20Attacment.PNG"/> <br />
+Figure 4: Encryption is complete and the scientists files are now unreadable. This is similar to what Iranian scientists saw in 2010 with the Stuxnet virus targeting the Iranian nuclear program.
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Encryption%20Complete.PNG"/> <br />
 <br />
 <p align="center">
-Figure 5: By modifying the Output Type, the keylogger will run discretely in the background.
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%204.%20Configured%20OutPut%20Type.PNG"/> <br />
+Figure 5: The scientist sees this message left by the threat actors asking for Bitcoin to be sent to the wallet address, along with a transaction ID emailed to the attackers. The wallet address, amount of Bitcoin to send, and the email address were all define in the C# code in Figure 2.
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Ransom%20Message.PNG"/> <br />
 <br />
 <p align="center">
-Figure 6: Example of the keylogger harvesting login credentials on a banking website.
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%206.%20Sample%20Login%20Banking%20Capture.PNG"/> <br />
+Figure 6: Less flashy ransom notes are sometimes left by threat actors like here in Figure 6. We can see the ransom instructions and what files were encrypted. Here, the attackers wished the victim a nice day. But it is in fact, NOT a nice day for the scientist.
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Ransom%20Note%20Left%20On%20Desktop.PNG"/> <br />
 <br />
 <p align="center">
-Figure 7: The same harvested credentials from Figure 6 are emailed to the test email address.
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%207.%20Sample%20Credentials%20Sent%20To%20Test%20Email.PNG"/> <br />
+Figure 7: The decryption C# code is shown here. The parameters of the code are targeting the jcrypt files on the victim's device.
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Decryption%20C%23%20Code.PNG"/> <br />
 <br />
 <p align="center">
-Figure 8: Keylogger executeable file shown in File Explorer that could theoretically be shared with others or installed on other machines.
-<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Keylogger%20Demo%208.%20Shareable%20File%20With%20Custom%20Code.PNG"/> <br />
+Figure 8: After paying the ransom, the sceintist is given the decryption key so he now has access to his cat photos again.
+<img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Files%20Decrypted.PNG"/> <br />
 <br />
 <p align="center">
 Figure 9: Task setup to automatically start the keylogger in the background upon user logon.
