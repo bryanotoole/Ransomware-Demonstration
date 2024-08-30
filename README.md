@@ -61,5 +61,6 @@ Figure 9: Like the ransom note, the decryption file generates a decryption log s
 <br />
 <p align="center">
 Figure 10: Executable files shown in File Explorer that could theoretically be shared with others or installed on other machines.
+<br />
 <img src="https://github.com/bryanotoole/Project-Pictures/blob/main/Encrypter%20%26%20Decrypter%20Folders%20In%20Safe%20Area.PNG"/> <br />
 <br />
